@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Api Data to Carousel Widget"),
+        title: const Text("Api Data to List"),
       ),
       body: Container(
         color: Colors.white,
