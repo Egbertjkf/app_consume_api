@@ -1,6 +1,5 @@
-# app_consume_api
 
-A new Flutter project.
+App to study MVP design pattern
 
 ## Getting Started
 
