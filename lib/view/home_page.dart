@@ -21,7 +21,14 @@ class HomePage extends StatelessWidget {
           return _homeController.apiData.value.isNotEmpty
               ? ListView.builder(itemBuilder: (context, index) {
                   return Card(
-                    child: Text(_homeController.apiData[index].toString()),
+                    child: ListTile(
+                      title:
+                          Text(_homeController.apiData[index].title.toString()),
+                      subtitle:
+                          Text(_homeController.apiData[index].id.toString()),
+                      leading:
+                          Image.network(_homeController.apiData[index].imgUrl),
+                    ),
                   );
                 })
               : Container();
